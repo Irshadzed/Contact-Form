@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>contact frrom</title>
+</head>
+<body>
+    <section id="contact" class="contact-section">
+        <div class="contact-box">
+            <div class="cont-container">
+                <h1>Connect With <span>Me</span></h1>
+                <div>
+                    <p>You have a <em>Question, Suggestion, Offer</em>,or
+                    want to <em>Collaborate</em> with me on something? <br>
+                    Don't hesitate to drop me a line!<span id="right-arrow">&#8594;</span> 
+                    </p>
+                </div>
+                
+                <div>
+                    <p>Adrress:<i> California, USA</i> </p> 
+                    <p>Phone: 123-456-8910</p>
+                    <p>Email: john@gmail.com</p>
+                </div>
+                
+                
+                
+            </div>
+            <form action="" method="POST" class="contact-form" onsubmit="submit">
+                <fieldset>
+                    <legend>Name</legend>
+                    <input type="text" id="name" required class="input" name="Name" placeholder="John Doe">
+                </fieldset>
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" id="email" required class="input" name="Email" placeholder="John@gmail.com">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Phone</legend>
+                    <input type="tel" id="phone" class="input" name="Phone" placeholder="123-456-7890">
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Message</legend>
+                    
+                    <textarea name="Message" id="message" cols="30" rows="10" class="textarea-input" required placeholder="Type your message here..." legend="message"></textarea>
+                    <label for="message" class="input-label"></label>
+                </fieldset>
+        
+                <div class="submit-group">
+                    <button type="submit" class="submit-bttn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <footer id="footer">
+            
+            <h3>yourName</h3>
+            <p>Copyright &copy; 2022 yourName. All rights reserved</p>
+        </footer>
+    </section>
+
+</body>
+</html>

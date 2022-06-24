@@ -14,7 +14,7 @@
     
     justify-content: space-around;
     width: 60%;
-    height: 90%;
+    height: 89%;
     margin: auto;
     place-items: center;
 }
@@ -32,7 +32,10 @@
 }
 .cont-container #right-arrow{
     font-size: 2rem;
+    
+    
 }
+
 .cont-container > div{
     margin:20px 0;
 }
@@ -69,11 +72,72 @@
     height: 32px;
 }
 
-footer{
+#footer{
     width: 100vw;
     height: 10%;
     background-color: rgba(0, 0, 0, 0.468);
     display: flex;
     justify-content: space-around;
     place-items: center;
+}
+
+/* ========= RESPONSIVENESS STARTS HERE ========= */
+@media (max-width:1050px) {
+    .contact-box{
+        width: 70%;
+    }
+}
+@media (max-width:1000px) {
+    .contact-box{
+        width: 75%;
+    }
+}
+@media (max-width:850px) {
+    .contact-box{
+        width: 80%;
+    }
+}
+@media (max-width:650px) {
+    .contact-box{
+        width: 90%;
+    }
+}
+@media (max-width:600px) {
+    .contact-box{
+        display: block;
+        width: 100%;
+        justify-content:center;
+        margin:0;
+        place-items: center;
+    }
+    .cont-container, .contact-form{
+        align-self: center;
+        width: 90%;
+        height: 38%;
+        margin: 0 1.5em;
+    }
+    .contact-form .textarea-input{
+        width: 90vw;
+        height: 140px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .cont-container h1{
+        text-align: center;
+    }
+    #right-arrow{
+        transform: rotate(90deg);
+        display: inline-block;
+        padding-left: 22px;
+    }
+}
+
+@media (max-height:950px) {
+    .contact-box{
+        height:92%;
+    }
+    #footer{
+        height:8%;
+    }
+    
 }
